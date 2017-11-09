@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>关于我们2</title>
+    <link rel="stylesheet" href="css/common.css">
+  	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/footer.css">
+<style>
+        .nav .active{
+            background-color: #fff;
+            border-top: 1px solid #EEAA4F;
+            border-bottom: 1px solid #EEAA4F;
+        }
+        .nav .active .tu{
+            background-image: url(images/nav2b.png);
+            background-size: cover;
+        }
+        .c1{
+             background-color:rgba(42,155,56,.8);
+             display: none;
+            }
+        .c2{
+             background-color:rgba(238,170,79,.8);
+        }
+        .c3{
+             background-color:rgba(221,122,120,.8);
+            display: none;
+        }
+        .c4{
+            background-color:rgba(113,189,228,.8);
+            display: none;
+        }
+ </style>
+</head>
+<body>
+    <div class="nav">
+        <div id="logo">
+            <div class="navLogo c1"></div>
+            <div class="navLogo c2"></div>
+            <div class="navLogo c3"></div>
+            <div class="navLogo c4"></div>
+        </div>
+        <div id="dian">
+            <div class="navkuai clearfix" id="shouye"><a href="index.html"><em  class="tu"></em><em  class="tu2"></em><em class="text">首页</em></a></div>
+            <div class="navkuai clearfix active"><a href="#"><em  class="tu"></em><em  class="tu2"></em><em class="text">关于我们</em></a></div>
+            <div class="navkuai clearfix"><a href="product.html"><em  class="tu"></em><em  class="tu2"></em><em class="text">产品介绍</em></a></div>
+            <div class="navkuai clearfix"><a href="crowdFunding.html"><em  class="tu"></em><em  class="tu2"></em><em class="text">众筹</em></a></div>
+        </div>
+        <div id="tiao">
+            <div></div>
+            <div class="more more1">
+                <p>
+                    <a href="enterprise introduction.html">集团介绍</a>
+
+                    <a href="contactUs.html">联系我们</a>
+                </p>
+            </div>
+            <div class="more more2">
+                 <p>
+                     <a href="#">品牌介绍</a>
+                     <a href="#">购买产品</a>
+                 </p>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+    <div class="subject">
+    	<div class="right">
+        	<a  class="banner_rg" href="enterprise introduction.html">
+                <em></em>
+            	<b style="display:block">集团介绍</b>
+                <span class="liao">了解详情</span>
+            </a>
+        </div>
+        <div class="left">
+        	<a class="banner_lf" href="contactUs.html">
+            	<i></i>
+                <em></em>
+            	<b style="display:block">联系我们</b>
+                <span class="liao">了解详情</span>
+            </a>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="footer">
+            <img src="images/footer.jpg" alt="">
+            <div class="zhezhao">
+               <div class="foot clearfix">
+                    <div class="footerLeft">
+                       <div class="footerRight">
+                            <img src="images/saoma.jpg" alt="">
+                            <p>微信公众号</p>
+                        </div>
+                        <p class="caidan">
+                            <a href="#">关于我们</a><em>|</em>
+                            <a href="#">集团介绍</a><em>|</em>
+                            <a href="#">企业荣誉</a><em>|</em>
+                            <a href="#">联系我们</a><em>|</em>
+                            <a href="#">产品介绍</a><em>|</em>
+                            <a href="#">品牌介绍</a><em>|</em>
+                            <a href="#">购买产品</a>
+                        </p>
+                        <p>农场地址：河北省保定市唐县西唐梅<span></span>公司地址：河北省保定市河北大学创客中心</p>
+                        <p>门店地址：河北省保定市秀兰步行街<span></span>电话：18830285693</p>
+                        <p>尧河山农版权所有</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+
+    
+    var odian = document.getElementById('dian');
+var adiv = odian.getElementsByTagName('div');
+var otiao = document.getElementById('tiao');
+var adiv2 = tiao.getElementsByTagName('div');
+var oLogo = document.getElementById('logo');
+var adiv3 = oLogo.getElementsByTagName('div');
+
+
+
+ 
+    for(var i=0;i<adiv.length; i++){
+    adiv[i].index = i;
+    adiv[i].onmouseover = function () {
+            for(var i=0;i<adiv.length;i++){
+                adiv2[i].style.display = "none";
+                adiv3[i].style.display = "none";
+                adiv2[i].style.opacity = "0";
+                otiao.style.opacity = "0";  
+            }
+            adiv2[this.index].style.display = "block";
+            adiv3[this.index].style.display = "block";
+            adiv2[this.index].style.opacity = "1";
+            otiao.style.opacity = "1";
+        }
+    adiv[i].onmouseout = function (){
+        otiao.style.opacity = "0";
+    }
+}
+</script>
+</html>
